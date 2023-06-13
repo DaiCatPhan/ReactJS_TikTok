@@ -1,7 +1,7 @@
-import routersConfig from '~/config/routes';
+import config from '~/config';
 
 // Layouts
-import { HeaderOnly } from '~/components/Layout';
+import { HeaderOnly } from '~/layouts';
 
 import Home from '~/pages/Home';
 import Following from '~/pages/Following';
@@ -11,11 +11,11 @@ import Search from '~/pages/Search';
 
 // k dang nhap van xem dc
 const publicRoutes = [
-    { path: routersConfig.home, component: Home },
-    { path: routersConfig.following, component: Following },
-    { path: routersConfig.profile, component: Profile },
-    { path: routersConfig.upload, component: Upload, layout: HeaderOnly },
-    { path: routersConfig.search, component: Search, layout: null },
+    { path: config.routes.home, component: Home },
+    { path: config.routes.following, component: Following },
+    { path: config.routes.profile, component: Profile },
+    { path: config.routes.upload, component: Upload, layout: HeaderOnly },
+    { path: config.routes.search, component: Search, layout: null },
 ];
 
 // dang nhap moi xem dc
