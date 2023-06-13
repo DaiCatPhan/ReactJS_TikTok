@@ -10,6 +10,10 @@
     padding-bottom: 8px;
 }
 
+.menu-body {
+    overflow-y: auto;
+}
+
 .menu-item {
     width: 100%;
     justify-content: flex-start;
@@ -38,6 +42,7 @@
     height: 100%;
     background-color: transparent;
     cursor: pointer;
+    flex-shrink: 0;
 }
 
 .header-title {
