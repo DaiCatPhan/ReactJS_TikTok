@@ -20,6 +20,7 @@
         background-color: transparent;
         caret-color: var(--primary);
         font-family: 'ProximaNova', sans-serif;
+        padding-right: 40px;
     }
 
     input:not(:placeholder-shown) ~ .search-btn {

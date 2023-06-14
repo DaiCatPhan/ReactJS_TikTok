@@ -24,7 +24,6 @@ import { Link } from 'react-router-dom';
 import config from '~/config';
 
 const cx = classNames.bind(styles);
-const currentUser = true;
 
 const MENU_ITEMS = [
     {
@@ -58,6 +57,7 @@ const MENU_ITEMS = [
 ];
 
 function Header() {
+    const currentUser = false;
     // Handle logic
     const handleMenuChange = (menuItem) => {
         switch (menuItem.type) {
